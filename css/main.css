@@ -1,0 +1,393 @@
+/* rogue pickings reformat to responsive by Rob Schuster formatted down to mobile from desktop starter code. 12/30/2019  */
+
+html {
+	font-size: 16px;
+}
+
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 1em 1em 1em 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.87em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+	font-size: 1.12em;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .87em;
+	line-height: 1.75em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	height: auto;
+}
+
+header h1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1em;
+	border-bottom: .18em solid #77a466;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .87em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-top: .18em solid #77a466;
+	border-bottom: .18em solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h3 {
+	color: #77a466;
+}
+.main-title p {
+	font-size: 1em;
+	line-height: 2em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	float: left;
+}
+
+.section-one h4 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.section-two {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.menu li {
+	color:#77a466;
+	line-height: 3em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.75em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	height: 3.12em;
+	border-top: .18em solid #eee;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .87em;
+}
+
+/* --------- Tablet size ------------- */
+
+@media (min-width: 768px) {
+	.container{
+		max-width: 100%;
+		display: flex;
+		padding: 2em 2em 2em 2em;
+	}
+	.bottom-section {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 33%;
+		height: auto;
+		border-top: 1px solid #eee;
+	}
+
+	.section-one h4 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.section-two {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: 0 1em 0 1em;
+	}
+
+	.menu {
+		list-style: none;
+		padding: 0;
+		display:flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.menu li {
+		color:#77a466;
+		line-height: 1.75em;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 1.75em;
+		padding: 0 1em 0 1em;
+	}
+
+	.address {
+		font-size: 1em;
+		line-height: 1.5em;
+		padding: 0 1em 0 1em;
+	}
+
+}
+
+
+/*  ----------------  PC size  --------------- */
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 2em 2em 2em 2em;
+	}
+
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		height: auto;
+	}
+
+	header h1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		float: left;
+		margin: 0;
+		padding: 0;
+		padding: 2.87em;
+		border: none;
+	}
+
+	header h1 span {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		color: #77a466;
+	}
+
+	header nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: flex-end;
+		padding-top: 3em;
+		padding-right: 2.8em;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: .875em;
+		padding: 2.87em;
+		display: inline;
+	}
+
+	header nav ul li a{
+		text-decoration: none;
+		color:#77a466;
+	}
+
+		.bottom-section {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		border-top: .062em solid #eee;
+		padding: 0 1em 0 1em;
+	}
+
+	.section-one h4 {
+		padding: .62em;
+	}
+
+	.section-two {
+		border-left: .062em solid #eee;
+		border-right: .062em solid #eee;
+	}
+
+	.section-two h4,
+	.section-three h4 {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding: .62em;
+	}
+
+	.menu {
+		list-style: none;
+		padding: 0;
+	}
+	.menu li {
+		padding: .62em;
+		color:#77a466;
+	}
+
+	.reviews {
+		color: #333;
+		font-size: 1em;
+		line-height: 2em;
+	}
+
+	.address {
+		font-size: 1em;
+		line-height: 1.5em;
+		padding: 0 1em 0 1em;
+	}
+}
