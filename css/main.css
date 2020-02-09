@@ -119,10 +119,10 @@ header nav ul li a{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	align-items: flex-start;
 	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
-	float: left;
 }
 
 .section-one h4 {
