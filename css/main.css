@@ -336,11 +336,11 @@ footer span {
 		color:#77a466;
 	}
 
-		.bottom-section {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-		}
+	.bottom-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
 
 	.section-one,
 	.section-two,
