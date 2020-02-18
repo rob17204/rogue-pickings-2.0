@@ -237,7 +237,7 @@ footer span {
 	.menu {
 		list-style: none;
 		padding: 0;
-		display:flex;
+		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
@@ -291,7 +291,6 @@ footer span {
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: flex-start;
-		float: left;
 		margin: 0;
 		padding: 0;
 		padding: 2.87em;
